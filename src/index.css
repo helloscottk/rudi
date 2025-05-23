@@ -1,0 +1,447 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 222.2 84% 4.9%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96%;
+    --accent-foreground: 222.2 84% 4.9%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  }
+}
+
+/* Enhanced meditation-themed styles */
+.meditation-gradient {
+  background: linear-gradient(135deg, #fef3c7 0%, #fed7aa 50%, #fecaca 100%);
+}
+
+.spiritual-gradient {
+  background: linear-gradient(135deg, #fef7ed 0%, #ffedd5 25%, #fed7d7 50%, #fde6e6 75%, #fef2f2 100%);
+}
+
+.chakra-glow {
+  box-shadow: 0 0 20px rgba(251, 146, 60, 0.3), 0 0 40px rgba(251, 146, 60, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.chakra-glow:hover {
+  box-shadow: 0 0 30px rgba(251, 146, 60, 0.4), 0 0 60px rgba(251, 146, 60, 0.2);
+}
+
+.spiritual-text {
+  @apply text-gray-700 leading-relaxed font-light;
+  line-height: 1.75;
+}
+
+.teacher-quote {
+  @apply italic text-lg text-gray-600 font-light leading-relaxed;
+  font-style: italic;
+  position: relative;
+}
+
+.teacher-quote::before {
+  content: '"';
+  font-size: 4rem;
+  color: rgba(251, 146, 60, 0.2);
+  position: absolute;
+  left: -1rem;
+  top: -1rem;
+  font-family: Georgia, serif;
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Enhanced animations */
+@keyframes float {
+  0%, 100% { 
+    transform: translateY(0px) rotate(0deg); 
+  }
+  50% { 
+    transform: translateY(-10px) rotate(2deg); 
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes spiritual-breath {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+}
+
+@keyframes heart-beat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  75% {
+    transform: scale(1.15);
+  }
+}
+
+.float-animation {
+  animation: float 3s ease-in-out infinite;
+}
+
+.pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.spiritual-breath {
+  animation: spiritual-breath 4s ease-in-out infinite;
+}
+
+.heart-beat {
+  animation: heart-beat 2s ease-in-out infinite;
+}
+
+/* Responsive text sizing */
+.hero-text {
+  @apply text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold;
+  background: linear-gradient(135deg, #1f2937 0%, #374151 50%, #1f2937 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+/* Enhanced card effects */
+.card-hover {
+  @apply transition-all duration-300 hover:shadow-xl;
+  transform-origin: center;
+}
+
+.card-hover:hover {
+  transform: translateY(-4px) scale(1.02);
+}
+
+.glass-effect {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Spiritual elements */
+.om-symbol::before {
+  content: "ॐ";
+  font-size: 1.5rem;
+  color: rgba(251, 146, 60, 0.6);
+  margin-right: 0.5rem;
+}
+
+.lotus-decoration::before {
+  content: "🪷";
+  margin-right: 0.5rem;
+  opacity: 0.7;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fef7ed;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #fb923c, #f97316);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #ea580c, #dc2626);
+}
+
+/* Meditation focus states */
+.meditation-focus {
+  outline: none;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.meditation-focus:focus {
+  border-color: #fb923c;
+  box-shadow: 0 0 0 3px rgba(251, 146, 60, 0.1);
+}
+
+/* Loading states */
+.spiritual-loading {
+  background: linear-gradient(90deg, #fef7ed 25%, #fed7aa 50%, #fef7ed 75%);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  body {
+    background: white !important;
+    color: black !important;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .meditation-gradient {
+    background: linear-gradient(135deg, #ffffff 0%, #f3f4f6 50%, #e5e7eb 100%);
+  }
+  
+  .chakra-glow {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .float-animation,
+  .pulse-glow,
+  .spiritual-breath,
+  .heart-beat {
+    animation: none;
+  }
+  
+  .card-hover:hover {
+    transform: none;
+  }
+}
+
+/* Mobile-specific enhancements */
+@media (max-width: 768px) {
+  .hero-text {
+    @apply text-3xl sm:text-4xl;
+  }
+  
+  .card-hover:hover {
+    transform: translateY(-2px) scale(1.01);
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .meditation-gradient {
+    background: linear-gradient(135deg, #451a03 0%, #7c2d12 50%, #991b1b 100%);
+  }
+  
+  .spiritual-text {
+    @apply text-gray-300;
+  }
+  
+  .teacher-quote {
+    @apply text-gray-400;
+  }
+}
+
+/* Meditation patterns and backgrounds */
+.meditation-bg {
+  background-image: 
+    radial-gradient(circle at 25% 25%, rgba(251, 146, 60, 0.1) 0%, transparent 25%),
+    radial-gradient(circle at 75% 75%, rgba(244, 63, 94, 0.1) 0%, transparent 25%),
+    radial-gradient(circle at 75% 25%, rgba(245, 158, 11, 0.05) 0%, transparent 25%),
+    radial-gradient(circle at 25% 75%, rgba(249, 115, 22, 0.05) 0%, transparent 25%);
+}
+
+.lotus-pattern {
+  background-image: 
+    radial-gradient(circle at 50% 50%, rgba(251, 146, 60, 0.1) 0%, transparent 50%),
+    conic-gradient(from 0deg at 50% 50%, 
+      rgba(244, 63, 94, 0.05) 0deg, 
+      rgba(251, 146, 60, 0.05) 60deg,
+      rgba(245, 158, 11, 0.05) 120deg,
+      rgba(244, 63, 94, 0.05) 180deg,
+      rgba(251, 146, 60, 0.05) 240deg,
+      rgba(245, 158, 11, 0.05) 300deg,
+      rgba(244, 63, 94, 0.05) 360deg
+    );
+}
+
+/* Chakra color gradients */
+.chakra-crown { background: linear-gradient(135deg, #8b5cf6, #a855f7); }
+.chakra-third-eye { background: linear-gradient(135deg, #6366f1, #8b5cf6); }
+.chakra-throat { background: linear-gradient(135deg, #06b6d4, #3b82f6); }
+.chakra-heart { background: linear-gradient(135deg, #10b981, #059669); }
+.chakra-solar { background: linear-gradient(135deg, #eab308, #f59e0b); }
+.chakra-sacral { background: linear-gradient(135deg, #f97316, #ea580c); }
+.chakra-root { background: linear-gradient(135deg, #dc2626, #b91c1c); }
+
+/* Beautiful text gradients */
+.text-rainbow {
+  background: linear-gradient(
+    45deg,
+    #f43f5e,
+    #fb923c,
+    #fbbf24,
+    #10b981,
+    #06b6d4,
+    #8b5cf6
+  );
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: rainbow 3s ease-in-out infinite;
+}
+
+@keyframes rainbow {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+/* Om symbol styling */
+.om-symbol {
+  font-family: 'Noto Sans Devanagari', serif;
+  font-weight: bold;
+  text-shadow: 0 0 20px rgba(251, 146, 60, 0.5);
+}
+
+/* Meditation circles animation */
+.meditation-circle {
+  animation: meditation-breathe 4s ease-in-out infinite;
+}
+
+@keyframes meditation-breathe {
+  0%, 100% { 
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  50% { 
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+}
+
+/* Energy flow animation */
+.energy-flow {
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(251, 146, 60, 0.3) 25%,
+    rgba(244, 63, 94, 0.3) 50%,
+    rgba(245, 158, 11, 0.3) 75%,
+    transparent 100%
+  );
+  background-size: 200% 100%;
+  animation: energy-flow 3s linear infinite;
+}
+
+@keyframes energy-flow {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* Beautiful box shadows */
+.shadow-meditation {
+  box-shadow: 
+    0 10px 25px -5px rgba(251, 146, 60, 0.1),
+    0 10px 10px -5px rgba(244, 63, 94, 0.04);
+}
+
+.shadow-spiritual {
+  box-shadow: 
+    0 20px 25px -5px rgba(251, 146, 60, 0.1),
+    0 10px 10px -5px rgba(244, 63, 94, 0.04),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+/* Hover effects for spiritual elements */
+.spiritual-hover {
+  transition: all 0.3s ease;
+}
+
+.spiritual-hover:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 
+    0 20px 25px -5px rgba(251, 146, 60, 0.15),
+    0 10px 10px -5px rgba(244, 63, 94, 0.1);
+}
+
+/* Background patterns */
+.mandala-bg {
+  background-image: 
+    radial-gradient(circle at center, transparent 20%, rgba(251, 146, 60, 0.05) 20.5%, rgba(251, 146, 60, 0.05) 30%, transparent 30.5%),
+    radial-gradient(circle at center, transparent 40%, rgba(244, 63, 94, 0.03) 40.5%, rgba(244, 63, 94, 0.03) 50%, transparent 50.5%),
+    radial-gradient(circle at center, transparent 60%, rgba(245, 158, 11, 0.02) 60.5%, rgba(245, 158, 11, 0.02) 70%, transparent 70.5%);
+  background-size: 200px 200px;
+} 

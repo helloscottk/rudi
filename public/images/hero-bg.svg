@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="800" viewBox="0 0 1400 800">
+  <defs>
+    <linearGradient id="heroSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24"/>
+      <stop offset="30%" style="stop-color:#fb923c"/>
+      <stop offset="70%" style="stop-color:#f43f5e"/>
+      <stop offset="100%" style="stop-color:#fef7ed"/>
+    </linearGradient>
+    <radialGradient id="sunGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#fbbf24"/>
+      <stop offset="50%" style="stop-color:#fb923c"/>
+      <stop offset="100%" style="stop-color:#f97316"/>
+    </radialGradient>
+    <linearGradient id="heartGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f43f5e"/>
+      <stop offset="100%" style="stop-color:#fb923c"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Sky background -->
+  <rect width="1400" height="800" fill="url(#heroSky)"/>
+  
+  <!-- Sun -->
+  <circle cx="200" cy="150" r="80" fill="url(#sunGrad)" opacity="0.8"/>
+  <circle cx="200" cy="150" r="100" fill="#fbbf24" opacity="0.3"/>
+  <circle cx="200" cy="150" r="120" fill="#fb923c" opacity="0.1"/>
+  
+  <!-- Clouds -->
+  <ellipse cx="400" cy="200" rx="60" ry="20" fill="#ffffff" opacity="0.7"/>
+  <ellipse cx="380" cy="190" rx="40" ry="15" fill="#ffffff" opacity="0.6"/>
+  <ellipse cx="420" cy="195" rx="35" ry="12" fill="#ffffff" opacity="0.8"/>
+  
+  <ellipse cx="800" cy="120" rx="80" ry="25" fill="#ffffff" opacity="0.5"/>
+  <ellipse cx="770" cy="110" rx="50" ry="18" fill="#ffffff" opacity="0.6"/>
+  <ellipse cx="830" cy="115" rx="45" ry="15" fill="#ffffff" opacity="0.7"/>
+  
+  <!-- Floating lotus petals -->
+  <path d="M500,300 Q520,280 540,300 Q520,320 500,300" fill="#f43f5e" opacity="0.6"/>
+  <path d="M600,250 Q615,235 630,250 Q615,265 600,250" fill="#fb923c" opacity="0.5"/>
+  <path d="M750,350 Q770,330 790,350 Q770,370 750,350" fill="#f97316" opacity="0.6"/>
+  
+  <!-- Heart shapes floating -->
+  <g transform="translate(300,400)">
+    <path d="M12,21.35l-1.45-1.32C5.4,15.36,2,12.28,2,8.5 C2,5.42,4.42,3,7.5,3c1.74,0,3.41,0.81,4.5,2.09C13.09,3.81,14.76,3,16.5,3 C19.58,3,22,5.42,22,8.5c0,3.78-3.4,6.86-8.55,11.54L12,21.35z" fill="url(#heartGrad)" opacity="0.4" transform="scale(1.5)"/>
+  </g>
+  
+  <g transform="translate(1000,300) rotate(15)">
+    <path d="M12,21.35l-1.45-1.32C5.4,15.36,2,12.28,2,8.5 C2,5.42,4.42,3,7.5,3c1.74,0,3.41,0.81,4.5,2.09C13.09,3.81,14.76,3,16.5,3 C19.58,3,22,5.42,22,8.5c0,3.78-3.4,6.86-8.55,11.54L12,21.35z" fill="#f43f5e" opacity="0.3" transform="scale(2)"/>
+  </g>
+  
+  <!-- Om symbols -->
+  <text x="900" y="500" fill="#fb923c" opacity="0.3" font-size="60" font-family="serif">ॐ</text>
+  <text x="1200" y="400" fill="#f43f5e" opacity="0.2" font-size="40" font-family="serif">ॐ</text>
+  
+  <!-- Energy swirls -->
+  <path d="M50,600 Q200,550 350,600 Q500,650 650,600 Q800,550 950,600" stroke="#fb923c" stroke-width="3" fill="none" opacity="0.4"/>
+  <path d="M100,650 Q250,600 400,650 Q550,700 700,650 Q850,600 1000,650" stroke="#f43f5e" stroke-width="2" fill="none" opacity="0.3"/>
+  
+  <!-- Gradient overlay for text readability -->
+  <rect width="1400" height="800" fill="url(#heroSky)" opacity="0.1"/>
+</svg> 

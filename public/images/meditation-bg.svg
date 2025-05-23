@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e1b4b"/>
+      <stop offset="30%" style="stop-color:#312e81"/>
+      <stop offset="70%" style="stop-color:#6366f1"/>
+      <stop offset="100%" style="stop-color:#8b5cf6"/>
+    </linearGradient>
+    <radialGradient id="moonGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#fbbf24"/>
+      <stop offset="100%" style="stop-color:#f59e0b"/>
+    </radialGradient>
+    <linearGradient id="auraGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fb923c;stop-opacity:0.3"/>
+      <stop offset="50%" style="stop-color:#f43f5e;stop-opacity:0.4"/>
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Sky background -->
+  <rect width="1200" height="800" fill="url(#skyGrad)"/>
+  
+  <!-- Stars -->
+  <circle cx="100" cy="80" r="2" fill="#fbbf24" opacity="0.8"/>
+  <circle cx="200" cy="120" r="1.5" fill="#ffffff" opacity="0.6"/>
+  <circle cx="300" cy="60" r="1" fill="#fbbf24" opacity="0.9"/>
+  <circle cx="450" cy="100" r="1.5" fill="#ffffff" opacity="0.7"/>
+  <circle cx="600" cy="70" r="2" fill="#fbbf24" opacity="0.8"/>
+  <circle cx="750" cy="110" r="1" fill="#ffffff" opacity="0.6"/>
+  <circle cx="900" cy="50" r="1.5" fill="#fbbf24" opacity="0.9"/>
+  <circle cx="1050" cy="90" r="2" fill="#ffffff" opacity="0.7"/>
+  
+  <!-- Moon -->
+  <circle cx="1000" cy="120" r="60" fill="url(#moonGrad)" opacity="0.9"/>
+  <circle cx="985" cy="105" r="8" fill="#f59e0b" opacity="0.5"/>
+  <circle cx="1010" cy="140" r="5" fill="#f59e0b" opacity="0.3"/>
+  
+  <!-- Mountains -->
+  <polygon points="0,600 200,400 400,500 600,300 800,450 1000,200 1200,350 1200,800 0,800" fill="#374151" opacity="0.8"/>
+  <polygon points="100,650 300,450 500,550 700,350 900,500 1100,250 1200,400 1200,800 0,800" fill="#4b5563" opacity="0.6"/>
+  
+  <!-- Meditation figure -->
+  <g transform="translate(600,580)">
+    <!-- Aura -->
+    <ellipse cx="0" cy="0" rx="80" ry="60" fill="url(#auraGrad)"/>
+    
+    <!-- Body -->
+    <ellipse cx="0" cy="-20" rx="15" ry="30" fill="#1f2937"/>
+    <!-- Head -->
+    <circle cx="0" cy="-45" r="12" fill="#1f2937"/>
+    <!-- Legs in lotus position -->
+    <ellipse cx="-20" cy="10" rx="12" ry="8" fill="#1f2937" transform="rotate(-30)"/>
+    <ellipse cx="20" cy="10" rx="12" ry="8" fill="#1f2937" transform="rotate(30)"/>
+    
+    <!-- Chakra points -->
+    <circle cx="0" cy="-55" r="3" fill="#a855f7" opacity="0.8"/> <!-- Crown -->
+    <circle cx="0" cy="-48" r="2.5" fill="#6366f1" opacity="0.8"/> <!-- Third Eye -->
+    <circle cx="0" cy="-38" r="2.5" fill="#06b6d4" opacity="0.8"/> <!-- Throat -->
+    <circle cx="0" cy="-25" r="3" fill="#10b981" opacity="0.8"/> <!-- Heart -->
+    <circle cx="0" cy="-12" r="2.5" fill="#f59e0b" opacity="0.8"/> <!-- Solar -->
+    <circle cx="0" cy="0" r="2.5" fill="#f97316" opacity="0.8"/> <!-- Sacral -->
+    <circle cx="0" cy="12" r="2.5" fill="#dc2626" opacity="0.8"/> <!-- Root -->
+  </g>
+  
+  <!-- Floating energy particles -->
+  <circle cx="550" cy="300" r="3" fill="#fb923c" opacity="0.5"/>
+  <circle cx="650" cy="250" r="2" fill="#f43f5e" opacity="0.6"/>
+  <circle cx="500" cy="400" r="2.5" fill="#a855f7" opacity="0.5"/>
+  <circle cx="700" cy="350" r="2" fill="#10b981" opacity="0.6"/>
+</svg> 
