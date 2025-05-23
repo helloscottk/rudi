@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Mail, MapPin, Clock, Phone, Send, Heart } from 'lucide-react';
+import emailjs from '@emailjs/browser';
+import { emailjsConfig } from '../config/emailjs';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -7,13 +9,37 @@ const Contact = () => {
     email: '',
     message: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
-    // Reset form
-    setFormData({ name: '', email: '', message: '' });
+    setIsSubmitting(true);
+    setSubmitStatus('idle');
+
+    try {
+      // EmailJS configuration - Replace these with your actual values
+      const result = await emailjs.send(
+        emailjsConfig.serviceId,
+        emailjsConfig.templateId,
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          message: formData.message,
+          to_name: 'Alik Elzafon',
+        },
+        emailjsConfig.publicKey
+      );
+
+      console.log('Email sent successfully:', result);
+      setSubmitStatus('success');
+      setFormData({ name: '', email: '', message: '' });
+    } catch (error) {
+      console.error('Email sending failed:', error);
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -94,12 +120,43 @@ const Contact = () => {
                   />
                 </div>
 
+                {/* Status Messages */}
+                {submitStatus === 'success' && (
+                  <div className="p-4 bg-green-50 border border-green-200 rounded-lg">
+                    <p className="text-green-800 font-medium">
+                      ✨ Message sent successfully! Alik will respond soon.
+                    </p>
+                  </div>
+                )}
+
+                {submitStatus === 'error' && (
+                  <div className="p-4 bg-red-50 border border-red-200 rounded-lg">
+                    <p className="text-red-800 font-medium">
+                      ❌ Failed to send message. Please try again or email directly.
+                    </p>
+                  </div>
+                )}
+
                 <button
                   type="submit"
-                  className="w-full inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-orange-500 to-rose-500 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-rose-600 transition-all duration-300 shadow-lg hover:shadow-xl"
+                  disabled={isSubmitting}
+                  className={`w-full inline-flex items-center justify-center px-8 py-4 font-semibold rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl ${
+                    isSubmitting
+                      ? 'bg-gray-400 cursor-not-allowed'
+                      : 'bg-gradient-to-r from-orange-500 to-rose-500 text-white hover:from-orange-600 hover:to-rose-600'
+                  }`}
                 >
-                  <Send className="h-5 w-5 mr-2" />
-                  Send Message
+                  {isSubmitting ? (
+                    <>
+                      <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white mr-2"></div>
+                      Sending...
+                    </>
+                  ) : (
+                    <>
+                      <Send className="h-5 w-5 mr-2" />
+                      Send Message
+                    </>
+                  )}
                 </button>
               </form>
             </div>
