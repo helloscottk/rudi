@@ -3,9 +3,9 @@
 
 export const emailjsConfig = {
   // Get these from https://www.emailjs.com/
-  serviceId: 'YOUR_SERVICE_ID',    // Replace with your EmailJS service ID
-  templateId: 'YOUR_TEMPLATE_ID',  // Replace with your EmailJS template ID
-  publicKey: 'YOUR_PUBLIC_KEY',    // Replace with your EmailJS public key
+  serviceId: 'service_zmko2qu',    // Your EmailJS service ID
+  templateId: 'template_j09c3wl',  // Your EmailJS template ID
+  publicKey: 'okxPr9f-WV-BTmkFs',  // Your EmailJS public key
 };
 
 // Email template variables that will be sent:
