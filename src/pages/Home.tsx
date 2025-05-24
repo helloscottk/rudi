@@ -185,7 +185,7 @@ const Home = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="text-white">
               <h2 className="text-4xl font-bold mb-6">
-                The <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-rose-400">Rudra Method</span>
+                The <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-rose-400">Last Life Yoga Method</span>
               </h2>
               <p className="text-lg text-gray-200 mb-6 leading-relaxed">
                 Our approach combines ancient wisdom with practical techniques for modern life. 

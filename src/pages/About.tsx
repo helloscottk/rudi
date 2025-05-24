@@ -8,7 +8,7 @@ const About = () => {
       <section className="py-20 bg-gradient-to-br from-amber-50 via-orange-50 to-rose-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-5xl font-bold text-gray-900 mb-6">About Rudra Meditation</h1>
+            <h1 className="text-5xl font-bold text-gray-900 mb-6">About Last Life Yoga</h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               A path to sustainable joy through conscious energy work and spiritual growth
             </p>
@@ -186,7 +186,7 @@ const About = () => {
             We all experience momentary joy, the feeling of our heart expanding, of having our eyes sparkle. 
             But then, we protect ourselves against yet another disappointment."
           </blockquote>
-          <p className="text-orange-100 font-semibold">- From the teachings of Rudra Meditation</p>
+                      <p className="text-orange-100 font-semibold">- From the teachings of Last Life Yoga</p>
         </div>
       </section>
     </div>

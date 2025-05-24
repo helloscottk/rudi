@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const quickLinks = [
-    { to: '/about', label: 'About Rudra Meditation' },
+    { to: '/about', label: 'About Last Life Yoga' },
     { to: '/classes', label: 'Class Schedule' },
     { to: '/teachings', label: 'Teachings & Wisdom' },
     { to: '/teachers', label: 'Meet the Teachers' },
@@ -39,7 +39,7 @@ const Footer = () => {
               </div>
               <div>
                 <span className="text-2xl font-bold bg-gradient-to-r from-orange-300 to-rose-300 bg-clip-text text-transparent">
-                  Rudra Meditation
+                  Last Life Yoga
                 </span>
                 <div className="text-xs text-orange-200 font-light">Finding Joy in the Heart</div>
               </div>
@@ -194,7 +194,7 @@ const Footer = () => {
         <div className="mt-16 pt-8 border-t border-orange-500/20">
           <div className="flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
             <div className="text-orange-200 text-sm">
-              <p>&copy; {new Date().getFullYear()} Rudra Meditation. All rights reserved.</p>
+              <p>&copy; {new Date().getFullYear()} Last Life Yoga. All rights reserved.</p>
               <p className="text-xs text-orange-300 mt-1">Spreading joy, one heart at a time</p>
             </div>
             

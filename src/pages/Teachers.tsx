@@ -13,7 +13,7 @@ const Teachers = () => {
       name: "Rudi",
       role: "Spiritual Guide",
       quote: "A teacher is like a temporary filling. Someday you have to toss it away and replace it with a permanent filling - god.",
-      description: "The foundational teachings that inspire the Rudra Meditation approach to spiritual growth and self-discovery."
+      description: "The foundational teachings that inspire the Last Life Yoga approach to spiritual growth and self-discovery."
     },
     {
       name: "Sarada Devi",

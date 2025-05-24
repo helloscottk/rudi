@@ -48,7 +48,7 @@ const Navigation = () => {
             </div>
             <div>
               <span className="text-xl font-bold bg-gradient-to-r from-orange-600 to-rose-600 bg-clip-text text-transparent">
-                Rudra Meditation
+                Last Life Yoga
               </span>
               <div className="text-xs text-gray-500 font-light -mt-1">Finding Joy in the Heart</div>
             </div>

@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "Rudra Meditation website - Finding joy in the heart through spiritual practice",
+  "description": "Last Life Yoga website - Finding joy in the heart through spiritual practice",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

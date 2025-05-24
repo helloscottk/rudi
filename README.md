@@ -1,10 +1,10 @@
-# 🕉️ Rudra Meditation - Finding Joy in the Heart
+# 🕉️ Last Life Yoga - Finding Joy in the Heart
 
-A beautifully designed spiritual website for the Rudra Meditation community, focused on discovering sustainable joy through chakra work, energy meditation, and conscious breathing practices.
+A beautifully designed spiritual website for the Last Life Yoga community, focused on discovering sustainable joy through chakra work, energy meditation, and conscious breathing practices.
 
 ## ✨ Overview
 
-This website serves the Rudra Meditation community in Monterey Peninsula, California, founded by spiritual teacher Alik Elzafon. The site embodies the core teaching that **"when all is said and done... it's about obtaining joy in the heart."**
+This website serves the Last Life Yoga community in Monterey Peninsula, California, founded by spiritual teacher Alik Elzafon. The site embodies the core teaching that **"when all is said and done... it's about obtaining joy in the heart."**
 
 ## 🎯 Core Philosophy
 
@@ -17,7 +17,7 @@ This website serves the Rudra Meditation community in Monterey Peninsula, Califo
 
 ### 📱 Complete Page Structure
 - **Home**: Hero section with philosophy and four pillars
-- **About**: Detailed explanation of the Rudra approach
+- **About**: Detailed explanation of the Last Life Yoga approach
 - **Classes**: Schedule and class information
 - **Teachings**: Spiritual wisdom and guidance
 - **Teachers**: Information about instructors
@@ -91,7 +91,7 @@ npm or yarn
 ```bash
 # Clone the repository
 git clone [repository-url]
-cd rudra-meditation-site
+cd last-life-yoga-site
 
 # Install dependencies
 npm install
@@ -169,7 +169,7 @@ The site incorporates the seven chakra system:
 
 This is a spiritual community project. Contributions should honor the sacred nature of the work:
 
-1. **Respect the Teachings**: All content should align with Rudra Meditation philosophy
+1. **Respect the Teachings**: All content should align with Last Life Yoga philosophy
 2. **Maintain Quality**: Keep code clean, documented, and accessible
 3. **Honor the Community**: Consider the impact on students and practitioners
 4. **Spiritual Integrity**: Ensure changes support the mission of finding joy in the heart
@@ -192,7 +192,7 @@ This is a spiritual community project. Contributions should honor the sacred nat
 
 ## 📜 License
 
-This project is created with love and spiritual intention for the Rudra Meditation community.
+This project is created with love and spiritual intention for the Last Life Yoga community.
 
 ---
 
